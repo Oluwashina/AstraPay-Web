@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AstraPay | Pay with confidence</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="materialize/css/materialize.min.css" type="text/css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/astraFooter.png">
+    <link rel="icon" type="image/png" sizes=32x32 href="images/astraFooter.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- for the animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- cdn for material icon -->
+    <link href="https://cdn.materialdesignicons.com/4.0.96/css/materialdesignicons.min.css" rel="stylesheet">
+    
+
+
+    <style>
+        body{
+            scroll-behavior: smooth;
+        }
+        #logo{
+            position: absolute;
+            height: 50px;
+            top: 5px;
+            right: -300px;
+        }
+         #listMenu{
+            margin-left: 40%;
+         }  
+       .slider .btn{
+           margin-top: 20px;
+       }
+       
+       /* praise */
+       /* praise */
+       .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        } 
+        h2,h3{
+            margin: 0px;
+            
+        }
+       
+       /* shina */
+       #contact .input-field input:focus{
+           border-bottom: 1px solid #1a00d4;
+       }
+       #contact .input-field input:focus + label{
+           color: #1a00d4;
+       }
+       #contact .input-field textarea:focus{
+           border-bottom: 1px solid #1a00d4;
+       }
+       #contact .input-field textarea:focus + label{
+           color: #1a00d4;
+       }
+       footer .ched p a:hover{
+           color: #1a00d4 !important;
+           transition: 0.5s;  
+       } 
+       #pels{
+           margin-top: 20px;
+        } 
+       #footLogo{
+            position: relative;
+            height: 200px;
+            width: 250px;
+            margin-top: 10%;    
+        }
+        #footer ul.center{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #copyright{
+            background-color: #131212;
+            background-size: auto;
+            border-top: 2px white;
+            text-align: center;
+        }
+        /* app features */
+        .yes .icon{
+            float: left;
+            margin-right: 20px;
+            font-size: 35px;
+            margin-top: 10px;
+        }
+        .yes .icon .med{
+            font-size: 35px;
+        }
+        .yes .desc{
+            overflow: hidden;
+        }
+        section .myCont{
+            width: 80%;
+        }
+        section .myCont h2{
+            margin: 50px;
+        }
+        @media only screen and (max-width:767px){
+            section .myCont h2{
+                font-size: 2rem;
+                line-height: 110%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+            <!-- navbar -->
+            <div class="navbar-fixed">
+            <nav class="nav-wrapper white">
+                <div class="">
+                    <a href="#" class="brand-logo left">
+                        <img src="images/recentLogo.png" alt="logo" id="logo" >
+                    </a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                        <i class="material-icons indigo-text">menu</i>
+                    </a>
+                    <ul class="hide-on-med-and-down" id="listMenu">
+                        <li><a href="#features" class="indigo-text text-darken-4">Features</a></li>
+                        <li><a href="#about" class="indigo-text text-darken-4">About us</a></li>
+                        <li><a href="#Faq" class="indigo-text text-darken-4">FAQs</a></li>
+                        <li><a href="#works" class="indigo-text text-darken-4">How it Works</a></li>
+                        <li><a href="#contact" class="indigo-text text-darken-4">Contact us</a></li>
+                        <li><a href="#agent" class="indigo-text text-darken-4">Become An Agent</a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                </nav>
+            </div>
+        </header>
+    
+                    <!-- mobile nav-links -->
+                    <ul class="sidenav white" id="mobile-links">
+                        <li><a href="#features" class="waves-effect" target="_self">Features</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#about" class="waves-effect" target="_self">About us</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#Faq" class="waves-effect" target="_self">FAQs</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#works" class="waves-effect" target="_self">How it works</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#contact" class="waves-effect" target="_self">Contact us</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#contact" class="waves-effect" target="_self">Become An Agent</a></li>
+                    </ul>
+
+    <!-- image slider -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="images/one.jpg" style="background-attachment:fixed">
+                <div class="caption right-align">
+                    <h1>Ease Withdrawal</h1>
+                    <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h5>
+                    <a href="#" class="indigo-text white waves-effect btn btn-large">Get Started</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/two.jpg" style="background-attachment:fixed">
+                <div class="caption right-align">
+                <h1>Laughter</h1>
+                    <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h5>
+                    <a href="#" class="white indigo-text waves-effect btn btn-large">Get Started</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/three.jpg" style="background-attachment:fixed">
+                <div class="caption left-align">
+                <h1>All Budgets</h1>
+                <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h5>
+                <a href="#" class="white indigo-text waves-effect btn btn-large">Get Started</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--About Us-->
+    <section class="section-home scrollspy">
+        <div class="container myCont">
+            <h2 class="center-align">Your Ease,Our Delight</h2>
+            <div class="row">
+                <div class="col s12 l4 yes">
+                    <div class="icon">
+                        <span class="mdi mdi-qrcode-scan indigo-text"></span>
+                    </div>
+                    <div class="desc">
+                        <h5>Raise and Claim Vouchers</h5>
+                        <p class="grey-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet distinctio facilis accusamus</p>
+                    </div>
+                </div>
+                    <div class="col s12 l4 yes">
+                        <div class="icon">
+                                <span class="mdi mdi-chart-line indigo-text"></span>
+                        </div>
+                        <div class="desc">
+                            <h5>Make Deposit</h5>
+                            <p class="grey-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet distinctio facilis accusamus</p>
+                        </div>
+                        </div>
+                     <div class="col s12 l4 yes">
+                            <div class="icon">
+                                 <i class="med material-icons indigo-text">money</i>
+                            </div>
+                        <div class="desc">
+                            <h5>Make Withdrawals</h5>
+                             <p class="grey-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet distinctio facilis accusamus</p>
+                         </div>
+                     </div>
+               </div>
+               <div class="row">
+                        <div class="col s12 l4 yes">
+                                <div class="icon">
+                                        <span class="mdi mdi-arrow-right-bold indigo-text"></span>
+                                    </div>
+                                    <div class="desc">
+                                        <h5>Do Transfers</h5>
+                                        <p class="grey-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet distinctio facilis accusamus</p>
+                                    </div>
+                            </div>
+                            <div class="col s12 l4 yes">
+                                    <div class="icon">
+                                            <span class="mdi mdi-currency-ngn indigo-text"></span>
+                                        </div>
+                                        <div class="desc">
+                                            <h5>Take Soft Loans</h5>
+                                            <p class="grey-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet distinctio facilis accusamus</p>
+                                        </div>
+                                </div>
+                                <div class="col s12 l4 yes">
+                                        <div class="icon">
+                                                <span class="mdi mdi-gamepad-circle-left indigo-text"></span>
+                                            </div>
+                                            <div class="desc">
+                                                <h5>Make Daily Contributions</h5>
+                                                <p class="grey-text text-darken-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet distinctio facilis accusamus</p>
+                                            </div>
+                                    </div>
+                          </div>
+                     </div>
+           </section>
+
+    <!-- features -->
+    <section id="features" class="scrollspy">
+    <section class="section section-works grey lighten-4" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <img src="images/yes2.png" class="responsive-img bounceInRight">
+                </div>
+                <div class="col s12 l6" style="margin-top:5em;">
+                    <p class="flow-text indigo-text"> RAISE VOUCHER </p>
+                    <p>
+                        We are various. We diversify our activity to cover more of our client's interests. 
+                        We are responsive. We aim to answer your questions and resolve any issues within a day. 
+                        We are informative. We try to educate our readers about the world of Financial Technology. 
+                    </p>
+                    <br>
+                    <a href="#" class="white-text indigo waves-effect btn btn-large">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-works scrollspy" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6" style="margin-top:5em;">
+                        <p class="flow-text indigo-text"> REEDEEM VOUCHER </p>
+                        <p>
+                            We are various. We diversify our activity to cover more of our client's interests. 
+                            We are responsive. We aim to answer your questions and resolve any issues within a day. 
+                            We are informative. We try to educate our readers about the world of Financial Technology. 
+                        </p>
+                        <br>
+                     <a href="#" class="white-text indigo waves-effect btn btn-large">Get Started</a>
+                    </div>
+                    <div class="col s12 l6">
+                            <img src="images/yes2.png" class="responsive-img bounceInRight">
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="works" class="section section-works grey lighten-4 scrollspy" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <img src="images/yes2.png" class="responsive-img bounceInLeft">
+                        </div>
+                        <div class="col s12 l6" style="margin-top:5em;">
+                            <p class="flow-text indigo-text"> MAKE DEPOSIT </p>
+                            <p>
+                                We are various. We diversify our activity to cover more of our client's interests. 
+                                We are responsive. We aim to answer your questions and resolve any issues within a day. 
+                                We are informative. We try to educate our readers about the world of Financial Technology. 
+                            </p>
+                            <br>
+                            <a href="#" class="white-text indigo waves-effect btn btn-large">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="works" class="section section-works scrollspy" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12 l6" style="margin-top:5em;">
+                                <br>
+                                <p class="flow-text indigo-text"> MAKE WITHDRAWAL </p>
+                                <p>
+                                    We are various. We diversify our activity to cover more of our client's interests. 
+                                    We are responsive. We aim to answer your questions and resolve any issues within a day. 
+                                    We are informative. We try to educate our readers about the world of Financial Technology. 
+                                </p>
+                                <a href="#" class="white-text indigo waves-effect btn btn-large">Get Started</a>
+                            </div>
+                            <div class="col s12 l6">
+                                    <img src="images/yes2.png" class="responsive-img">
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="works" class="section section-works grey lighten-4 scrollspy" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col s12 l6">
+                                    <img src="images/yes2.png" class="responsive-img">
+                                </div>
+                                <div class="col s12 l6" style="margin-top:5em;">
+                                    <p class="flow-text indigo-text"> MAKE DAILY CONTRIBUTIONS </p>
+                                    <p>
+                                        We are various. We diversify our activity to cover more of our client's interests. 
+                                        We are responsive. We aim to answer your questions and resolve any issues within a day. 
+                                        We are informative. We try to educate our readers about the world of Financial Technology. 
+                                    </p>
+                                    <br>
+                    <a href="#" class="white-text indigo waves-effect btn btn-large">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="works" class="section section-works scrollspy" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                            <div class="container">
+                                <div class="row">
+                                    
+                                    <div class="col s12 l6" style="margin-top:5em;">
+                                        <p class="flow-text indigo-text"> DO TRANSFERS </p>
+                                        <p>
+                                            We are various. We diversify our activity to cover more of our client's interests. 
+                                            We are responsive. We aim to answer your questions and resolve any issues within a day. 
+                                            We are informative. We try to educate our readers about the world of Financial Technology. 
+                                        </p>
+                                        <br>
+                                    <a href="#" class="white-text indigo waves-effect btn btn-large">Get Started</a>
+                                    </div>
+                                    <div class="col s12 l6">
+                                        <img src="images/yes2.png" class="responsive-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="works" class="section section-works grey lighten-4 scrollspy" data-aos="zoom-in-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col s12 l6">
+                                            <img src="images/yes2.png" class="responsive-img">
+                                        </div>
+                                        <div class="col s12 l6" style="margin-top:5em;">
+                                            <p class="flow-text indigo-text"> TAKE SOFT LOANS  </p>
+                                            <p>
+                                                We are various. We diversify our activity to cover more of our client's interests. 
+                                                We are responsive. We aim to answer your questions and resolve any issues within a day. 
+                                                We are informative. We try to educate our readers about the world of Financial Technology. 
+                                            </p>
+                                            <br>
+                                            <a href="#" class="white-text indigo waves-effect btn btn-large">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                 </section>
+
+    <!-- how it works -->
+    <section id="works" class="section transparent scrollspy">
+        <div class="container">
+            <!-- how started -->
+            <div class="row">
+                    <div class="col s12 l6">
+                        <img src="images/yes2.png" class="responsive-img">
+                    </div>
+                    <div class="col s12 l6" style="margin-top:5em;">
+                    
+                        <div class="btn-floating indigo btn-small"><i class="material-icons">done</i></div>
+                        <span class="flow-text">&nbsp; Download the AstraApp</span>
+                        <br>
+                        <br>
+                        
+                        <div class="btn-floating indigo btn-small"><i class="material-icons">done</i></div>
+                        <span class="flow-text">&nbsp; Create your account</span>
+                        <br>
+                        <br>   
+                            
+                        <div class="btn-floating indigo btn-small"><i class="material-icons">done</i></div>
+                        <span class="flow-text">&nbsp; Apply for the loan that matches your needs</span>
+                        <br>
+                        <br>
+                        <div>
+                            <a href="#"><img src="images/gp.png" class="responsive-img" style="margin-right:10px;"></a>
+                            <a href="#"><img src="images/ip.png" class="responsive-img"></a>
+                        </div>
+    
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+
+    <!-- section FAQ -->
+    <section id="Faq" class="section section-faq grey lighten-4 scrollspy">
+        <div class="container">
+            <h4>Frequently asked questions</h4>
+            <p>Can't find your answer? We're here to help! Ask one of our advisors at <a href="mailto:nigeria@astrapay.co">
+                nigeria@astrapay.co.</a></p>
+            <p>Get quick answers to your questions. Contact Us if you do not find what you're looking for.</p>
+        </div>
+        <div class="container">
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>What is AstraPay?</div>
+                    <div class="collapsible-body"><span>
+                    Astra Pay LTD is a UK registered company which is opearating in the IT and FinTech industries. We provide services in IT technologies and Blockchain. Our team consists of finance and IT professionals to bring our customers reliable and sophisticated service.
+                    </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>Where is AstraPay Located?</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>What are other customers saying about AstraPay?</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>In which countries does AstraPay Operate?</div>
+                    <div class="collapsible-body"><span>
+                    Astra Pay LTD is a UK registered company which is opearating in the IT and FinTech industries. We provide services in IT technologies and Blockchain. Our team consists of finance and IT professionals to bring our customers reliable and sophisticated service.
+                        </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>How do i get the latest version of the app?</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">add</i>Can i call a representative or visit the office?</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- section contact -->
+    <section id="contact" class="section section-contact scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l7">
+                        <div class="card-panel grey lighten-3">
+                            <h5 class="indigo-text">Leave a message</h5>
+                            <form>
+                                <div class="input-field">
+                                    <input type="text" required>
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text"  required>
+                                    <label for="phone">Phone</label>
+                                </div>
+                                <div class="input-field">
+                                    <textarea class="materialize-textarea"></textarea>
+                                    <label for="messsage">Your message</label>
+                                </div>
+                                <div class="center-align">
+                                    <input type="submit" value="Submit" class="btn indigo">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col s12 l4 offset-l1" style="padding: 10px;">
+                        <div>
+                        <i class="material-icons indigo-text prefix">email</i>
+                        <a href="mailto:info@astrapay.com" class="flow-text grey-text lighten-3">&nbsp;info@astrapay.com</a>
+                        </div>
+                        <br>
+                        <div>
+                        <i class="material-icons indigo-text prefix">call</i>
+                        <span class=" flow-text grey-text lighten-3">&nbsp;070022552528</span>
+                        </div>
+                        <div>
+                            <i class="material-icons indigo-text prefix" id="pels">room</i>
+                            <iframe class="responsive-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1978.4375731016744!2d3.865877858022743!3d7.367888898670849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjInMDQuNCJOIDPCsDUyJzAxLjEiRQ!5e0!3m2!1sen!2sng!4v1566119656709!5m2!1sen!2sng" width="320" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--About Us-->
+    <section class=" section scrollspy grey lighten-4" id="about">
+        <div class="row container">
+            <div class="col s12 l4">
+                <br>
+                <!-- about us image here -->
+                <div class="card" data-aos="flip-right">
+                    <div class="card-image">
+                        <img alt=" " src="images/1.jpg" class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                            <p class="card-title activator">A simple Card</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <br><br><br>
+                <ul class="tabs">
+                    <li class="tab col s6 grey lighten-4">
+                        <a href="#about_us" class="indigo-text">About Us</a>
+                    </li>
+                    <li class="tab col s6 grey lighten-4">
+                        <a href="#why_us" class="indigo-text">Why Us</a>
+                    </li>
+                </ul>
+
+                <div class="col s12" id="about_us">
+                    <p class="flow-text indigo-text"> About Us </p>
+                    <p>Astra Pay LTD is a UK registered company which is opearating in the IT and FinTech industries. We provide services in IT technologies and Blockchain. Our team consists of finance and IT professionals to bring our customers reliable and sophisticated service.</p>
+                </div>
+
+                <div class="col s12" id="why_us">
+                    <p class="flow-text indigo-text"> Why Us </p>
+                    <p>
+                        We are various. We diversify our activity to cover more of our client's interests. 
+                        We are responsive. We aim to answer your questions and resolve any issues within a day. 
+                        We are informative. We try to educate our readers about the world of Financial Technology. 
+                    </p>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- section footer -->
+    <footer id="footer" class="page-footer grey darken-3 white-text center">
+            <div class="">
+                <div class="row">
+                    <div class="col s12 l3">
+                        <ul>
+                            <li><a href="#"><img src="images/whitelogo.png" id="footLogo"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l3 ched">
+                        <h5>Curious about AstraPay?</h5>
+                        <p><a href="#about" class="white-text">About us</a></p>
+                        <p><a href="#works" class="white-text">How it works</a><p>
+                        <p><a href="#features" class="white-text">Features</a></p>
+                        <p><a href="#Faq" class="white-text">FAQs</a></p>
+                        <p><a href="#" class="white-text">Register / Login</a></p>
+                    </div>
+                    <div class="col s12 l3">
+                            <h5>Get Astrapay</h5>
+                            <ul>
+                                <li><a href="https://play.google.com/store/apps"><img src="images/gp.png" class="responsive-img" style="margin-bottom: 5%;"></a></li>
+                                <li><a href="https://www.apple.com/ng/ios/app-store/"><img src="images/ip.png" class="responsive-img"></a></li>
+                            </ul>
+                        </div>
+                    <div class="col s12 l3">
+                        <h5>Connect</h5>
+                        <ul class="center">
+                            <li><a href="#" class="btn-floating btn-small indigo darken-3">
+                                    <i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#" class="btn-floating btn-small indigo darken-3">
+                                    <i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="btn-floating btn-small indigo darken-3">
+                                    <i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" class="btn-floating btn-small indigo darken-3">
+                                    <i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright" id="copyright">
+                    <div class="container center-align" style="float: center">
+                        &copy; 2019 AstraPay LTD. || All rights reserved.
+                    </div>
+            </div>
+        </footer>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/d54c227c34.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+            AOS.init();
+            $('.sidenav').sidenav().on('click tap', 'li a', () => {
+                 $('.sidenav').sidenav('close');
+            });
+            $('.tooltipped').tooltip();
+            $('.slider').slider({
+                indicators: false,
+                height: 600,
+                transition:500,
+                interval: 6000
+            });
+            $('.scrollspy').scrollSpy();
+            $('.tabs').tabs();
+            $('.parallax').parallax();
+            $('.collapsible').collapsible();
+            $('.carousel.carousel-slider').carousel({
+                fullwidth: true,
+                indicators: true
+            });
+            
+        });
+    </script>
+
+    <!-- tawk -->
+    <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5d5683cdeb1a6b0be607d1a0/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
