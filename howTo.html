@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How To</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="materialize/css/materialize.min.css" type="text/css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/astraFooter.png">
+    <link rel="icon" type="image/png" sizes=32x32 href="images/astraFooter.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+     <!-- for montserrat fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins" rel="stylesheet">
+
+      <!-- cdn for material icon -->
+    <link href="https://cdn.materialdesignicons.com/4.0.96/css/materialdesignicons.min.css" rel="stylesheet">
+
+    <style>
+            body{
+                scroll-behavior: smooth;
+                font-family: 'Montserrat','Poppins', sans-serif;
+            }
+            #logo{
+                position: absolute;
+                height: 50px;
+                top: 5px;
+                right: -300px;
+            }
+             #listMenu{
+                margin-left: 35%;
+             }  
+           .slider .btn{
+               margin-top: 20px;
+           }
+           
+           /* praise */
+           /* praise */
+           .tabs .indicator{
+                background-color: #1a237e;
+            }
+            .tabs .tab a:focus, .tabs .tab a:focus.active{
+                background: transparent;
+            } 
+            h2,h3{
+                margin: 0px;
+                
+            }
+           
+           /* shina */
+           #contact .input-field input:focus{
+               border-bottom: 1px solid #1a00d4;
+           }
+           #contact .input-field input:focus + label{
+               color: #1a00d4;
+           }
+           #contact .input-field textarea:focus{
+               border-bottom: 1px solid #1a00d4;
+           }
+           #contact .input-field textarea:focus + label{
+               color: #1a00d4;
+           }
+           footer .ched p a:hover{
+               color: #1a00d4 !important;
+               transition: 0.5s;  
+           } 
+           #pels{
+               margin-top: 20px;
+            } 
+           #footLogo{
+                position: relative;
+                height: 200px;
+                width: 250px;
+                margin-top: 10%;    
+            }
+            #footer ul.center{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            #copyright{
+                background-color: #131212;
+                background-size: auto;
+                border-top: 2px white;
+                text-align: center;
+            }
+            /* app features */
+            .yes .icon{
+                float: left;
+                margin-right: 20px;
+                font-size: 35px;
+                margin-top: 5px;
+            }
+            .yes .icon .money{
+                font-size: 35px;
+            }
+            .yes .desc{
+                overflow: hidden;
+            }
+            section .myCont{
+                width: 80%;
+            }
+            section .myCont h2{
+                margin: 50px;
+            }
+            @media only screen and (max-width:767px){
+                section .myCont h2{
+                    font-size: 2rem;
+                    line-height: 110%;
+                }
+            }
+        </style>
+</head>
+<body>
+        <header>
+                <!-- navbar -->
+                <div class="navbar-fixed">
+                <nav class="nav-wrapper white">
+                    <div class="">
+                        <a href="index.html#" class="brand-logo left">
+                            <img src="images/recentLogo.png" alt="logo" id="logo" >
+                        </a>
+                        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                            <i class="material-icons indigo-text">menu</i>
+                        </a>
+                        <ul class="hide-on-med-and-down" id="listMenu">
+                            <li><a href="index.html#features" class="indigo-text text-darken-4">Features</a></li>
+                            <li><a href="index.html#about" class="indigo-text text-darken-4">About us</a></li>
+                            <li><a href="index.html#Faq" class="indigo-text text-darken-4">FAQs</a></li>
+                            <li><a href="index.html#works" class="indigo-text text-darken-4">Get AstraPay</a></li>
+                            <li><a href="#" class="indigo-text text-darken-4">How To</a></li>
+                            <li><a href="agent.html" class="indigo-text text-darken-4">Become An Agent</a></li>
+                            <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Instagram">
+                                <i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                    </nav>
+                </div>
+            </header>
+        
+                        <!-- mobile nav-links -->
+                        <ul class="sidenav white" id="mobile-links">
+                            <li><a href="index.html#features" class="waves-effect" target="_self">Features</a></li>
+                            <li class="divider"></li>
+                            <li><a href="index.html#about" class="waves-effect" target="_self">About us</a></li>
+                            <li class="divider"></li>
+                            <li><a href="index.html#Faq" class="waves-effect" target="_self">FAQs</a></li>
+                            <li class="divider"></li>
+                            <li><a href="index.html#works" class="waves-effect" target="_self">Get AstraPay</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#" class="waves-effect" target="_self">How To</a></li>
+                            <li class="divider"></li>
+                            <li><a href="agent.html" class="waves-effect" target="_self">Become An Agent</a></li>
+                        </ul>
+
+
+    <section class="container">
+            <h1>How To,</h1>
+    </section>
+    <section class="container">
+            <h1>Hello</h1>
+    </section>
+    <section class="container">
+            <h1>Hello</h1>
+    </section>
+   
+    
+    
+   
+    
+
+
+
+    <!-- section footer -->
+    <footer id="footer" class="page-footer grey darken-3 white-text center">
+            <div class="">
+                <div class="row">
+                    <div class="col s12 l3">
+                        <ul>
+                            <li><a href="#"><img src="images/whitelogo.png" id="footLogo"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l3 ched">
+                        <h5>Curious about AstraPay?</h5>
+                        <p><a href="index.html#about" class="white-text">About us</a></p>
+                        <p><a href="index.html#works" class="white-text">Get Astrapay</a><p>
+                        <p><a href="index.html#features" class="white-text">Features</a></p>
+                        <p><a href="index.html#Faq" class="white-text">FAQs</a></p>
+                        <p><a href="#" class="white-text">Privacy policy</a></p>
+                    </div>
+                    <div class="col s12 l3">
+                            <h5>Get Astrapay</h5>
+                            <ul>
+                                <li><a href="https://play.google.com/store/apps"><img src="images/gp.png" class="responsive-img" style="margin-bottom: 5%;"></a></li>
+                                <li><a href="https://www.apple.com/ng/ios/app-store/"><img src="images/ip.png" class="responsive-img"></a></li>
+                            </ul>
+                        </div>
+                    <div class="col s12 l3">
+                        <h5>Connect</h5>
+                        <ul class="center">
+                            <li><a href="#" class="btn-floating btn-small indigo darken-3">
+                                    <i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#" class="btn-floating btn-small indigo darken-3">
+                                    <i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="btn-floating btn-small indigo darken-3">
+                                    <i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" class="btn-floating btn-small indigo darken-3">
+                                    <i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright" id="copyright">
+                    <div class="container center-align" style="float: center">
+                        &copy; 2019 AstraPay LTD. || All rights reserved.
+                    </div>
+            </div>
+        </footer>
+    <script src="https://kit.fontawesome.com/d54c227c34.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js" type="text/javascript"></script>
+    <script>
+            $(document).ready(function(){
+               $('.sidenav').sidenav().on('click tap', 'li a', () => {
+                    $('.sidenav').sidenav('close');
+               });
+            });
+       </script>
+</body>
+</html>
