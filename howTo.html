@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>How To</title>
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="materialize/css/materialize.min.css" type="text/css" rel="stylesheet">
+    <!-- <link href="materialize/css/materialize.min.css" type="text/css" rel="stylesheet"> -->
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/astraFooter.png">
@@ -22,17 +21,40 @@
 
       <!-- cdn for material icon -->
     <link href="https://cdn.materialdesignicons.com/4.0.96/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- ghpages -->
+    <link href="ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="materialize/css/materialize.min.css" type="text/css" rel="stylesheet">
 
     <style>
             body{
                 scroll-behavior: smooth;
-                font-family: 'Montserrat','Poppins', sans-serif;
+                font-family: 'Montserrat','Poppins', sans-serif !important;
             }
-            #logo{
+            /* #logo{
                 position: absolute;
                 height: 50px;
                 top: 5px;
                 right: -300px;
+            } */
+            #logo2{
+                height: 100px;
+                padding:20px;
+                margin: 32px;
+                /* margin-right: 35px; */
+                
+            }
+            #listHowTo{
+                padding-top: 50px;
+                padding-left: 30px;
+            }
+            .sidenav li>a:hover{
+                background: #1a00d4 !important;
+                color:white;
+
+            }
+            .sidenav .logo>a:first-child:hover{
+                background: white !important;
+
             }
              #listMenu{
                 margin-left: 35%;
@@ -67,6 +89,12 @@
            #contact .input-field textarea:focus + label{
                color: #1a00d4;
            }
+           .dropdown-content li>span{
+               color: #1a00d4;
+           }
+           .select-dropdown li.disabled{
+            background-color: rgba(0,0,0,0.03);
+           }
            footer .ched p a:hover{
                color: #1a00d4 !important;
                transition: 0.5s;  
@@ -92,10 +120,10 @@
             }
             /* app features */
             .yes .icon{
-                float: left;
-                margin-right: 20px;
-                font-size: 35px;
-                margin-top: 5px;
+                /* float: left; */
+                /* margin-right: 20px; */
+                /* font-size: 35px; */
+                margin-top: 15px;
             }
             .yes .icon .money{
                 font-size: 35px;
@@ -115,76 +143,324 @@
                     line-height: 110%;
                 }
             }
+
+            .top-nav{
+                background: url(images/agent-navbar.png);
+            }
+
+            /* back to top button */
+            #back-to-top{
+                position: fixed;
+                bottom: 20px;
+                width: 50px;
+                right: 20px;
+                font-size: 26px;
+                height: 50px;
+                color: #1a00d4;
+                border: 2px solid #1a00d4;
+                outline: none;
+                border-radius: 50%;
+                background-color: #fff;
+                cursor: pointer;
+                z-index: 1;
+                transition: all 0.2s ease-in-out;
+                display: none;
+            }
+            #back-to-top:hover,#back-to-top:focus{
+                background-color: #1a00d4;
+                color: #fff;
+            }
         </style>
 </head>
 <body>
-        <header>
-                <!-- navbar -->
-                <div class="navbar-fixed">
-                <nav class="nav-wrapper white">
-                    <div class="">
-                        <a href="index.html#" class="brand-logo left">
-                            <img src="images/recentLogo.png" alt="logo" id="logo" >
-                        </a>
-                        <a href="#" class="sidenav-trigger" data-target="mobile-links">
-                            <i class="material-icons indigo-text">menu</i>
-                        </a>
-                        <ul class="hide-on-med-and-down" id="listMenu">
-                            <li><a href="index.html#features" class="indigo-text text-darken-4">Features</a></li>
-                            <li><a href="index.html#about" class="indigo-text text-darken-4">About us</a></li>
-                            <li><a href="index.html#Faq" class="indigo-text text-darken-4">FAQs</a></li>
-                            <li><a href="index.html#works" class="indigo-text text-darken-4">Get AstraPay</a></li>
-                            <li><a href="#" class="indigo-text text-darken-4">How To</a></li>
-                            <li><a href="agent.html" class="indigo-text text-darken-4">Become An Agent</a></li>
-                            <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Instagram">
-                                <i class="fab fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Facebook">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        </ul>
-                    </div>
-                    </nav>
-                </div>
-            </header>
         
-                        <!-- mobile nav-links -->
-                        <ul class="sidenav white" id="mobile-links">
-                            <li><a href="index.html#features" class="waves-effect" target="_self">Features</a></li>
-                            <li class="divider"></li>
-                            <li><a href="index.html#about" class="waves-effect" target="_self">About us</a></li>
-                            <li class="divider"></li>
-                            <li><a href="index.html#Faq" class="waves-effect" target="_self">FAQs</a></li>
-                            <li class="divider"></li>
-                            <li><a href="index.html#works" class="waves-effect" target="_self">Get AstraPay</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#" class="waves-effect" target="_self">How To</a></li>
-                            <li class="divider"></li>
-                            <li><a href="agent.html" class="waves-effect" target="_self">Become An Agent</a></li>
-                        </ul>
+    <header>
+        <nav class="top-nav" style="height:70px; text-align: center">
+            <div class="container">
+                <div class="nav-wrapper">
+                  <div class="row">
+                    <div class="col s12 m10 offset-m1">
+                      <h4 class="header white-text">How To</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </nav>
 
+        <ul id="nav-mobile" class="sidenav sidenav-fixed">
 
-    <section class="container">
-            <h1>How To,</h1>
+            <li class="logo">
+                <a href="index.html" class="brand-logo center-align" id="logo2"><img src="images/recentLogo.png" alt="logo" style="height:50px;"></a>
+            </li>
+            <hr>
+            <li class="bold" id="listHowTo">
+                <li><a data-scroll href="#features" class="waves-effect" target="_self">Raise Voucher</a></li>
+                <li><a data-scroll href="#redeemVoucher" class="waves-effect" target="_self">Redeem Voucher</a></li>
+                <li><a data-scroll href="#makeDeposit" class="waves-effect" target="_self">Make Deposit</a></li>
+                <li><a data-scroll href="#makeWithdrawal" class="waves-effect" target="_self">Make Withdrawal</a></li>
+                <li><a data-scroll href="#dailyContri" class="waves-effect" target="_self">Make Daily Contributions</a></li>
+                <li><a data-scroll href="#doTransfers" class="waves-effect" target="_self">Do Transfers</a></li>
+                <li><a data-scroll href="#takeSoft" class="waves-effect" target="_self">Take Soft Loans</a></li>
+                <li><a data-scroll href="#agent" class="waves-effect" target="_self">Become An Agent</a></li>
+            
+            </li>
+        </ul>
+        
+
+    </header>
+
+    <main class="container">
+        <section id="features" class="scrollspy">
+            <section class="section section-works">
+                    <div class="row">
+                        <div class="col s12 m8 l8">
+                            <h5 class="indigo-text left-align" id="raiseVoucher"><span class="mdi mdi-qrcode-scan icon indigo-text" style="margin-right:20px"></span>HOW TO RAISE VOUCHERS</h5>
+                            <ol style="list-style-type: square;">
+                                <li>STEP 1: Open the AstraPay app and click on <b>"Voucher"</b>. <b>The "Voucher"</b> page will appear on your screen. Select <b>"Raise Voucher"</b>.</li><br>
+                                <li>STEP 2: Input the receiver's name, select the voucher date.</li><br>
+                                <li>STEP 3: Input the voucher amount in words and figure for confirmation.</li><br>
+                                <li>STEP 4: Click on <b>"confirm voucher"</b> and wait a bit while the system processes your voucher.</li><br>
+                                <li>STEP 5: Save your <b>voucher ID"</b>, and you are good to go.</li><br>
+                            </ol>
+                        </div>
+                        <div class="col s12 m4 l4" style="margin-top: 3em;">
+                            <img src="images/iph-raise.png" class="responsive-img">
+                        </div>
+                    </div>
+            </section>
+            <hr>
+
+            <section id="redeemVoucher" class="section section-works">
+                <div class="row">
+                    <div class="col s12 m8 l8">
+                        <h5 class="indigo-text left-align"><span class="mdi mdi-qrcode-scan icon indigo-text" style="margin-right:20px"></span>HOW TO REDEEM VOUCHERS</h5>
+                        <ol style="list-style-type: square;">
+                            <li>STEP 1: Open your AstraPay App, click "voucher", and select "Redeem voucher".</li><br>
+                            <li>STEP 2: Enter your voucher code into the voucher field found on the voucher page.</li><br>
+                            <li>STEP 3: After entering the code - consisting of both letters and numbers, click the 'Redeem' button.</li><br>
+                            <li>STEP 4: The sum of the voucher will be redeemed to your wallet immediately.</li><br>
+                        </ol>
+                    </div>
+                    <div class="col s12 m4 l4" style="margin-top: 3em;">
+                        <img src="images/iph-redeem.png" class="responsive-img">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="makeDeposit" class="section section-works">
+                    <div class="row">
+                        <div class="col s12 m8 l8">
+                            <h5 class="indigo-text left-align" id="raiseVoucher"><span class="mdi mdi-chart-line icon indigo-text" style="margin-right:20px"></span>HOW TO MAKE DEPOSIT</h5>
+                            <ol style="list-style-type: square;">
+                                <li>STEP 1: Open your AstraPay App, on the menu bar, click "Transaction" and select "Make Deposit".</li><br>
+                                <li>STEP 2: Fill in the destination account details, i.e. account number and bank type.</li><br>
+                                <li>STEP 3: Wait while the App loads the other details automatically. Input the total amount you want to deposit and click the "Deposit" button.</li><br>
+                                <li>STEP 4: You'll receive a confirmation message showing transaction details. Save your transaction receipt.</li><br>
+                            </ol>
+                        </div>
+                        <div class="col s12 m4 l4" style="margin-top: 3em;">
+                            <img src="images/iph-depo.png" class="responsive-img">
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="makeWithdrawal" class="section section-works">
+                    <div class="row">
+                        <div class="col s12 m8 l8">
+                            <h5 class="indigo-text left-align"><i class="material-icons money indigo-text" style="margin-right:10px;">money</i>HOW TO MAKE WITHDRAWAL</h5>
+                            <ol style="list-style-type: square;">
+                                <li>STEP 1: Open your AstraPay App, on the menu bar, click on the <b>"Transaction"</b> icon, select <b>"make withdrawals"</b>.</li><br>
+                                <li>STEP 2: Input your ATM details, i.e. <b>card number, CVV, and card expiring date.</b></li><br>
+                                <li>STEP 3: Input the amount to be withdrawn, input your card pin for confirmation.</li><br>
+                                <li>STEP 4: You'll receive an OTP on your phone which you'll use to make your cash withdrawal at any of our agent shops.</li><br>
+                            </ol>
+                        </div>
+                        <div class="col s12 m4 l4" style="margin-top: 3em;">
+                            <img src="images/iph--with.png" class="responsive-img">
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section id="dailyContri" class="section section-works">
+                        <div class="row">
+                            <div class="col s12 m8 l8">
+                                <h5 class="indigo-text left-align" id="raiseVoucher"><span class="mdi mdi-gamepad-circle-left indigo-text" style="margin-right:20px"></span>MAKE DAILY CONTRIBUTIONS</h5>
+                                <ol style="list-style-type: square;">
+                                    <li>STEP 1: Open your AstraPay App, on the menu bar, click on the <b>"Contribution"</b> icon and select <b>"daily contribution"</b>.</li><br>
+                                    <li>STEP 2: Create your daily contribution group and add group details.</li><br>
+                                    <li>STEP 3: Invite friends to join your contribution group and set the start date.</li><br>
+                                    <li>STEP 4: You'll receive a notification with a congratulation message for creating a daily contribution group.</li><br>
+                                </ol>
+                            </div>
+                            <div class="col s12 m4 l4" style="margin-top: 3em;">
+                                <img src="images/iphContri.png" class="responsive-img">
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <section id="doTransfers" class="section section-works">
+                            <div class="row">
+                                <div class="col s12 m8 l8">
+                                    <h5 class="indigo-text left-align"><span class="mdi mdi-arrow-right-bold icon indigo-text" style="margin-right:20px"></span>HOW TO DO BANK TRANSFERS</h5> <br>
+                                    <ol style="list-style-type: square;">
+                                        <li>STEP 1: Open your AstraPay App, on the menu bar, click on the <b>"Transfer"</b> icon, and select the transfer type.</li><br>
+                                        <li>STEP 2: there are three (3) types of transfer you can do with AstraPay - <b>"transfer to wallet"</b>, <b>"transfer to bank"</b>, and <b>"transfer to Astra"</b>.</li><br>
+                                        <li>STEP 3: Select your choice of transfer and input your ATM card details, i.e. <b>card number, expiry date, CVV and card PIN</b>.</li><br>
+                                        <li>STEP 4: You'll receive an OTP notification on your phone, input the OTP Code in the OTP page and click <b>"confirm"</b>.</li><br>
+                                        <li>STEP 5: You'll receive a notification showing the transaction details.</li><br>
+                                    </ol>
+                                </div>
+                                <div class="col s12 m4 l4" style="margin-top: 3em;">
+                                    <img src="images/three33.png" class="responsive-img">
+                                </div>
+                            </div>
+                        </section>
+                        <hr>
+                        <section id="takeSoft" class="section section-works">
+                                <div class="row">
+                                    <div class="col s12 m8 l8">
+                                        <h5 class="indigo-text left-align" id="raiseVoucher"><span class="mdi mdi-currency-ngn icon indigo-text" style="margin-right:20px"></span>TAKE SOFT LOANS</h5>
+                                        <ol style="list-style-type: square;">
+                                            <li>STEP 1: Open the AstraPay app, and click on "Loan". The "soft loan" page will appear on your screen. Click "Take soft loan".</li><br>
+                                            <li>STEP 2: input your Bank details, i.e. Account number, bank type, and BVN.</li><br>
+                                            <li>STEP 3: Wait, while AstraPay cross-check your eligibility for soft loan online. Thus, the amount you are eligible for will be displayed on screen.</li><br>
+                                            <li>STEP 4: Type the amount you want to withdraw and click on "Get Loan". The amount will instantly reflect in your wallet as an online instant loan, i.e. soft loan.</li><br>
+                                        </ol>
+                                    </div>
+                                    <div class="col s12 m4 l4" style="margin-top: 3em;">
+                                        <img src="images/iph-loan.png" class="responsive-img">
+                                    </div>
+                                </div>
+                            </section>
+                            <hr>
+                            <section id="agent" class="section section-works">
+                                    <div class="row">
+                                        <div class="col s12 m8 l8">
+                                            <h5 class="indigo-text left-align"><span class="mdi mdi-account icon indigo-text" style="margin-right:20px"></span>BECOME AN AGENT</h5>
+                                            <ol style="list-style-type: square;">
+                                                <li>STEP 1: Download our agent app from the playStore.</li><br>
+                                                <li>STEP 2: Click on the "Register" button.</li><br>
+                                                <li>STEP 3: Fill in your details where appropriate and click "Register".</li><br>
+                                                <li>STEP 4: Our support centre will contact you for briefing and other procedures.</li><br>
+                                                <li>STEP 5: Once you've completed the offline procedures, you can start your business.</li><br>
+                                            </ol>
+                                        </div>
+                                        <div class="col s12 m4 l4" style="margin-top: 3em;">
+                                            <img src="images/profile.png" class="responsive-img">
+                                        </div>
+                                    </div>
+                                </section>
+            </section>
+            <!-- privacy policy -->
+<section class="section scrollspy">
+    <div class="row">
+        <div class="col s12 l12 center-align">
+            <h5 class="indigo-text center-align">PRIVACY POLICY</h5>
+            <blockquote style="border-left:5px solid #1a00d4">All the data we collect on AstraPay is encrypted and protected – never sold to the third parties. We have strict policies that ensure our methods are adequately communicated, and customer data is always protected.
+                    AstraPay uses the data to deliver the Service and maintain a customer relationship, including processing refund claims.</blockquote>
+        </div>
+    </div>
+    <div class="row center-align col s12 l12">
+
+        <a class="waves-effect waves-light btn modal-trigger white indigo-text" href="#modal1">Terms and Conditions</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+            <h4 class="indigo-text">Terms and Conditions</h4>
+            <p class=""style="text-align:justify;">This is a contract. These Terms constitute a contract between you and AstraPay. You may not use the Service if you do not accept these Terms. By using any part of the Service you accept these Terms. If you are under eighteen (18) years of age, you may not use the Service.<br><br>
+                You must register an account with valid information. To use the Service, you must: (a) provide a valid mobile phone number; (b) agree to the creation of an account associated with such number; (c) accept the present Terms; and (d) submit such other and additional information as AstraPay may request. You agree to provide true, accurate and complete information about yourself as prompted by AstraPay during the account registration process. You will be given the option of receiving a unique PIN for purposes of reusing your account. You are responsible for keeping your PIN secure.
+                    </p>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat indigo-text">Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat indigo-text">Disagree</a>
+            </div>
+        </div>
+          
+
+    </div>
+</section>
+
+<hr>
+<!-- support and assistance -->
+
+<section class="section scrollspy">
+        <div class="row">
+            <div class="col s12 l12 center-align">
+                <h5 class="indigo-text center-align">NEED HELP?</h5>
+                <blockquote style="border-left:5px solid #1a00d4">If you've any question or complaints about our services, please send us a thorough description via our <a href="mailto:info@astrapay.com" class="grey-text lighten-3">&nbsp;<b>Helpdesk</b></a>.
+                        Alternatively, you can use our live chat support below... We strive to respond to all users requests.</blockquote>
+            </div>
+        </div>
     </section>
-    <section class="container">
-            <h1>Hello</h1>
-    </section>
-    <section class="container">
-            <h1>Hello</h1>
-    </section>
-   
-    
-    
-   
-    
 
+    <!-- section contact -->
+    <section id="contact" class="section section-contact scrollspy">
+            <!-- <div class="container"> -->
+                <div class="row">
+                    <div class="col s12 l7">
+                        <div class="card-panel grey lighten-3"> 
+                            <h5 class="indigo-text">Leave a message</h5>
+                            <form>
+                                <div class="input-field">
+                                    <input type="text" required>
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="input-field">
+                                    <!-- <input list="issue" name="issue" placeholder="Complaints" required> -->
+                                    <select id="issue">
+                                        <option value="" disabled selected>Complains/Issues</option>
+                                        <option value="Raise Voucher" class="cald" >Raise Voucher</option>
+                                        <option value="Redeem Voucher">Redeem Voucher</option>
+                                        <option value="Make Deposit">Make Deposit</option>
+                                        <option value="Make Withdrawal">Make Withdrawal</option>
+                                        <option value="Make Daily Contributions">Make Daily Contributions</option>
+                                        <option value="Do Transfers">Do Transfers</option>
+                                        <option value="Take Soft Loans">Take Soft Loans</option>
+                                        <option value="Become An Agent">Become An Agent</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text"  required>
+                                    <label for="phone">Phone</label>
+                                </div>
+                                <div class="input-field">
+                                    <textarea class="materialize-textarea"></textarea>
+                                    <label for="messsage">Your message</label>
+                                </div>
+                                <div class="center-align">
+                                    <input type="submit" value="Submit" class="btn indigo">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col s12 l4 offset-l1" style="padding: 10px;">
+                        <div>
+                        <i class="material-icons indigo-text prefix">email</i>
+                        <a href="mailto:info@astrapay.com" class="flow-text grey-text lighten-3">&nbsp;info@astrapay.com</a>
+                        </div>
+                        <br>
+                        <div>
+                        <i class="material-icons indigo-text prefix">call</i>
+                        <span class=" flow-text grey-text lighten-3">&nbsp; 070022552528</span>
+                        </div>
+                        <div>
+                            <i class="material-icons indigo-text prefix" id="pels">room</i>
+                            <br>
+                            <iframe class="responsive-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1978.4375731016744!2d3.865877858022743!3d7.367888898670849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjInMDQuNCJOIDPCsDUyJzAxLjEiRQ!5e0!3m2!1sen!2sng!4v1566119656709!5m2!1sen!2sng" width="320" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+    </section>
 
+    </main>
 
     <!-- section footer -->
     <footer id="footer" class="page-footer grey darken-3 white-text center">
@@ -231,15 +507,46 @@
                     </div>
             </div>
         </footer>
+
+
+        <!-- back to top button -->
+        <button id="back-to-top"><i class="fas fa-angle-double-up"></i></button>
+
+        <!-- back-to-top script -->
+        <script>
+            const backToTop = document.querySelector('#back-to-top');
+            window.addEventListener('scroll',function(){
+                if(window.pageYOffset > 500){
+                    backToTop.style.display = "block";
+                }else{
+                    backToTop.style.display = "none";
+                }
+            });
+            backToTop.addEventListener('click',function(){
+                window.scrollTo(0,0);
+            })
+        
+        </script>
+
+
+
     <script src="https://kit.fontawesome.com/d54c227c34.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="materialize/js/materialize.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
             $(document).ready(function(){
-               $('.sidenav').sidenav().on('click tap', 'li a', () => {
-                    $('.sidenav').sidenav('close');
-               });
+            //    $('.sidenav').sidenav().on('click tap', 'li a', () => {
+            //         $('.sidenav').sidenav('close');
+            //    });
+            $('.sidenav').sidenav('');
+            $('.modal').modal();
+            $('.scrollspy').scrollSpy();
+            $('select').formSelect();
             });
+       </script>
+       <script>
+           var scroll = new SmoothScroll('a[href*="#"]');
        </script>
 </body>
 </html>

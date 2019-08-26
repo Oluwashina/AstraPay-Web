@@ -28,8 +28,6 @@
 
     <!-- for montserrat fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins" rel="stylesheet">
-    
-
 
     <style>
         body{
@@ -37,14 +35,10 @@
             font-family: 'Montserrat','Poppins', sans-serif;
         }
         #logo{
-            position: absolute;
             height: 50px;
-            top: 5px;
-            right: -300px;
-        }
-         #listMenu{
-            margin-left: 35%;
-         }  
+            margin-left: 20px;
+            margin-top: 5px;
+        } 
        .slider .btn{
            margin-top: 20px;
        }
@@ -134,27 +128,27 @@
             <div class="navbar-fixed">
             <nav class="nav-wrapper white">
                 <div class="">
-                    <a href="#" class="brand-logo left">
+                    <a href="#" class="brand-logo">
                         <img src="images/recentLogo.png" alt="logo" id="logo" >
                     </a>
                     <a href="#" class="sidenav-trigger" data-target="mobile-links">
                         <i class="material-icons indigo-text">menu</i>
                     </a>
-                    <ul class="hide-on-med-and-down" id="listMenu">
+                    <ul class="right hide-on-med-and-down">
                         <li><a href="#features" class="indigo-text text-darken-4">Features</a></li>
                         <li><a href="#about" class="indigo-text text-darken-4">About us</a></li>
                         <li><a href="#Faq" class="indigo-text text-darken-4">FAQs</a></li>
                         <li><a href="#works" class="indigo-text text-darken-4">Get AstraPay</a></li>
-                        <li><a href="#" class="indigo-text text-darken-4">How To</a></li>
-                        <li><a href="agent.html" class="indigo-text text-darken-4 modal-trigger">Become An Agent</a></li>
-                        <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Instagram">
+                        <li><a href="howTo.html" class="indigo-text text-darken-4">How To</a></li>
+                        <li><a href="agent.html" class="indigo-text text-darken-4">Become An Agent</a></li>
+                        <li><a href="#" class="btn-floating btn-small indigo darken-3 pulse" data-tooltip="Instagram">
                             <i class="fab fa-instagram"></i></a>
                         </li>
-                        <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Facebook">
+                        <li><a href="#" class="btn-floating btn-small indigo darken-3 pulse" data-tooltip="Facebook">
                                 <i class="fab fa-facebook"></i>
                             </a>
                         </li>
-                        <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-3 pulse" data-tooltip="Twitter">
+                        <li><a href="#" class="btn-floating btn-small indigo darken-3 pulse" data-tooltip="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
@@ -179,10 +173,9 @@
                         <li><a href="agent.html" class="waves-effect" target="_self">Become An Agent</a>
                         </li>
                     </ul>
-
                    
-    <!-- image slider -->
-    <div class="slider">
+     <!-- image slider --> 
+     <div class="slider">
         <ul class="slides">
             <li>
                 <img src="images/sliderOne.jpg" style="background-attachment:fixed">
@@ -211,10 +204,12 @@
         </ul>
     </div>
 
+   
+
     <!--Features Intro-->
     <section class="section-home scrollspy">
         <div class="container myCont">
-            <h2 class="center-align">Your Ease, Our Delight</h2>
+            <h2 class="center-align ease">Your Ease, Our Delight</h2>
             <div class="row">
                 <div class="col s12 l4 yes">
                     <div class="icon">
@@ -385,7 +380,7 @@
                                         <div class="desc">
                                         <h5 class="indigo-text">MAKE DAILY CONTRIBUTIONS</h5>
                                             <p>
-                                                    With our daily contribution plan, you never can know the lump sum that will produce. Tailored to you and your financial pedestal, give it a try!
+                                            With our daily contribution plan, you never can know the lump sum that will produce. Tailored to you and your financial pedestal, give it a try!
                                             </p>
                                             <br>
                                         <a href="#works" class="white-text indigo waves-effect btn btn-large">Get Started</a>
@@ -483,7 +478,7 @@
     <section id="Faq" class="section section-faq grey lighten-4 scrollspy">
         <div class="container">
             <h4>Frequently asked questions</h4>
-            <p>Can't find your answer? We're here to help! Ask one of our advisors at <a href="mailto:nigeria@astrapay.co" class="indigo-text">
+            <p>Can't find your answer? We're here to help! Ask one of our advisors at <a class="indigo-text">
                 nigeria@astrapay.co.</a></p>
             <p>Get quick answers to your questions. Contact Us if you do not find what you're looking for.</p>
         </div>
@@ -653,10 +648,6 @@
         </footer>
 
 
-       
-
-
-
 
     <script src="https://kit.fontawesome.com/d54c227c34.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -665,6 +656,17 @@
     <!-- carousel script -->
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, {
+        indicators: false,
+        height: 600,
+        transition: 500,
+        interval: 6000,
+    });
+  });
+
         $(document).ready(function(){
             AOS.init();
             $('.sidenav').sidenav().on('click tap', 'li a', () => {
@@ -672,12 +674,7 @@
             });
             $('.modal').modal();
             $('.tooltipped').tooltip();
-            $('.slider').slider({
-                indicators: false,
-                height: 600,
-                transition:500,
-                interval: 6000
-            });
+
             $('.scrollspy').scrollSpy();
             $('.tabs').tabs();
             $('.parallax').parallax();
