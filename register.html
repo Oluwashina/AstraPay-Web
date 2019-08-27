@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agent</title>
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- materialize framework -->
+    <link href="materialize/css/materialize.min.css" type="text/css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/astraFooter.png">
+    <link rel="icon" type="image/png" sizes=32x32 href="images/astraFooter.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+     <!-- for montserrat fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins" rel="stylesheet">
+      <!-- cdn for material design icon -->
+    <link href="https://cdn.materialdesignicons.com/4.0.96/css/materialdesignicons.min.css" rel="stylesheet">
+    
+    <style>
+    body {
+        scroll-behavior: smooth;
+        font-family: "Montserrat", "Poppins", sans-serif;
+        background: url("images/slider.jpg");
+        background-size: cover;
+     }
+     /* contact style */
+     #contact .input-field input:focus{
+           border-bottom: 1px solid #1a00d4;
+       }
+       #contact .input-field input:focus + label{
+           color: #1a00d4;
+       }
+       #contact .input-field textarea:focus{
+           border-bottom: 1px solid #1a00d4;
+       }
+       #contact .input-field textarea:focus + label{
+           color: #1a00d4;
+       }
+       /* checkbox style */
+       [type="checkbox"]:checked+span:not(.lever):before {
+           border-right: 2px solid #1a00d4;
+           border-bottom: 2px solid #1a00d4;
+       }
+      
+    </style>
+
+</head>
+<body>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <br>
+                <div class="col s12 l7 offset-l2">
+                <div class="card-panel grey lighten-3">
+                    <h5 class="indigo-text center-align">Become Our Agent Today.</h5>
+                    <form>
+                        <div class="input-field">
+                            <input type="text" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+                            <p>Gender</p>
+                            <p>
+                            <label>
+                            <input type="checkbox">
+                            <span>Male</span>
+                            </label>&nbsp;
+                            <label>
+                                <input type="checkbox">
+                                <span>Female</span>
+                            </label>
+                            </p>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text"  required>
+                            <label for="phone">Phone</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text"  required>
+                            <label for="phone">BVN No</label>
+                        </div>
+                        <div class="input-field">
+                                <textarea class="materialize-textarea"></textarea>
+                                <label for="messsage">Contact Address</label>
+                            </div>
+                        <div class="center-align">
+                            <input type="submit" value="Submit" class="btn indigo">
+                        </div>
+                    </form><br>
+                    <div class="center-align">
+                    <a href="index.html#contact" class="indigo-text">Need help? We're here for you.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <script src="https://kit.fontawesome.com/d54c227c34.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="materialize/js/materialize.min.js" type="text/javascript"></script>
+</body>
+</html>

@@ -164,12 +164,7 @@
                 background-color: #fff;
                 cursor: pointer;
                 z-index: 1;
-                transition: all 0.2s ease-in-out;
                 display: none;
-            }
-            #back-to-top:hover,#back-to-top:focus{
-                background-color: #1a00d4;
-                color: #fff;
             }
         </style>
 </head>
@@ -393,7 +388,7 @@
                                 </section>
             </section>
             <!-- privacy policy -->
-<section class="section scrollspy">
+<section class="section scrollspy" id="policy">
     <div class="row">
         <div class="col s12 l12 center-align">
             <h5 class="indigo-text center-align">PRIVACY POLICY</h5>
@@ -518,7 +513,7 @@
                         <p><a href="index.html#works" class="white-text">Get Astrapay</a><p>
                         <p><a href="index.html#features" class="white-text">Features</a></p>
                         <p><a href="index.html#Faq" class="white-text">FAQs</a></p>
-                        <p><a href="#" class="white-text">Privacy policy</a></p>
+                        <p><a href="#policy" class="white-text">Privacy policy</a></p>
                     </div>
                     <div class="col s12 l3">
                             <h5>Get Astrapay</h5>
@@ -551,7 +546,7 @@
 
 
         <!-- back to top button -->
-        <button id="back-to-top"><i class="fas fa-angle-double-up"></i></button>
+        <button id="back-to-top"><span class="mdi mdi-arrow-up indigo-text"></span> </button>
 
         <!-- back-to-top script -->
         <script>
