@@ -30,12 +30,6 @@
                 scroll-behavior: smooth;
                 font-family: 'Montserrat','Poppins', sans-serif !important;
             }
-            /* #logo{
-                position: absolute;
-                height: 50px;
-                top: 5px;
-                right: -300px;
-            } */
             #logo2{
                 height: 100px;
                 padding:20px;
@@ -171,17 +165,20 @@
 <body>
         
     <header>
-        <nav class="top-nav" style="height:70px; text-align: center">
-            <div class="container">
-                <div class="nav-wrapper">
-                  <div class="row">
-                    <div class="col s12 m10 offset-m1">
-                      <h4 class="header white-text">How To</h4>
+        <!-- <div class="navbar-fixed"> -->
+            <nav class="top-nav" style="height:70px; text-align: center">
+                <div class="container">
+                    <div class="nav-wrapper">
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1">
+                            <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a> -->
+                            <h4 class="header white-text center-align" >How To</h4>
+                        </div>
                     </div>
-                  </div>
+                    </div>
                 </div>
-              </div>
-        </nav>
+            </nav>
+        <!-- </div> -->
 
         <ul id="nav-mobile" class="sidenav sidenav-fixed">
 
@@ -198,6 +195,7 @@
                 <li><a data-scroll href="#doTransfers" class="waves-effect" target="_self">Do Transfers</a></li>
                 <li><a data-scroll href="#takeSoft" class="waves-effect" target="_self">Take Soft Loans</a></li>
                 <li><a data-scroll href="#agent" class="waves-effect" target="_self">Become An Agent</a></li>
+                
             
             </li>
         </ul>
@@ -435,7 +433,7 @@
     <section id="contact" class="section section-contact scrollspy">
             <!-- <div class="container"> -->
                 <div class="row">
-                    <div class="col s12 l7">
+                    <div class="col s12 l7 pull-l1">
                         <div class="card-panel grey lighten-3"> 
                             <h5 class="indigo-text">Leave a message</h5>
                             <form>
@@ -459,11 +457,11 @@
                                     </select>
                                 </div>
                                 <div class="input-field">
-                                    <input type="text" required>
+                                    <input type="email" required>
                                     <label for="email">Email</label>
                                 </div>
                                 <div class="input-field">
-                                    <input type="text"  required>
+                                    <input type="tel" pattern="^[0]\d{10}$" title='Phone Number (Format: 08078785455)' required>
                                     <label for="phone">Phone</label>
                                 </div>
                                 <div class="input-field">
@@ -476,15 +474,15 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col s12 l4 offset-l1" style="padding: 10px;">
+                    <div class="col s12 l5" style="padding: 10px;">
                         <div>
                         <i class="material-icons indigo-text prefix">email</i>
-                        <a href="mailto:info@astrapay.com" class="flow-text grey-text lighten-3">&nbsp;info@astrapay.com</a>
+                        <a class="flow-text grey-text lighten-3">&nbsp;info@astrapay.com</a>
                         </div>
                         <br>
                         <div>
                         <i class="material-icons indigo-text prefix">call</i>
-                        <span class=" flow-text grey-text lighten-3">&nbsp; 070022552528</span>
+                        <span class=" flow-text grey-text lighten-3">&nbsp;070022552528</span>
                         </div>
                         <div>
                             <i class="material-icons indigo-text prefix" id="pels">room</i>
@@ -509,6 +507,7 @@
                     </div>
                     <div class="col s12 l3 ched">
                         <h5>Curious about AstraPay?</h5>
+                        <p><a href="index.html" class="white-text">Home</a></p>
                         <p><a href="index.html#about" class="white-text">About us</a></p>
                         <p><a href="index.html#works" class="white-text">Get Astrapay</a><p>
                         <p><a href="index.html#features" class="white-text">Features</a></p>
@@ -518,8 +517,8 @@
                     <div class="col s12 l3">
                             <h5>Get Astrapay</h5>
                             <ul>
-                                <li><a href="https://play.google.com/store/apps"><img src="images/gp.png" class="responsive-img" style="margin-bottom: 5%;"></a></li>
-                                <li><a href="https://www.apple.com/ng/ios/app-store/"><img src="images/ip.png" class="responsive-img"></a></li>
+                                <li><a href="https://play.google.com/store/apps"><img src="images/playstore.svg" class="responsive-img" style="margin-bottom: 5%;"></a></li>
+                                <li><a href="https://www.apple.com/ng/ios/app-store/"><img src="images/apple.svg" class="responsive-img"></a></li>
                             </ul>
                         </div>
                     <div class="col s12 l3">
@@ -554,6 +553,7 @@
             window.addEventListener('scroll',function(){
                 if(window.pageYOffset > 500){
                     backToTop.style.display = "block";
+                    // backToTop.style.border = "1px solid black";
                 }else{
                     backToTop.style.display = "none";
                 }
@@ -572,10 +572,7 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
             $(document).ready(function(){
-            //    $('.sidenav').sidenav().on('click tap', 'li a', () => {
-            //         $('.sidenav').sidenav('close');
-            //    });
-            $('.sidenav').sidenav('');
+            $('.sidenav').sidenav();
             $('.modal').modal();
             $('.scrollspy').scrollSpy();
             $('select').formSelect();
